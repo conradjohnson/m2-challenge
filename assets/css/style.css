@@ -2,6 +2,7 @@
     --main-border:#6C91BF;
     --secondary-border: #5FB0B7;
     --main-hover: #D14081;
+    --caption-background: #7E2E84;
   }
 
 
@@ -18,10 +19,14 @@ header {
   color: #fff;
   height: 100px;
 }
+
 footer{
     display:flex;
     background-color: var(--main-border);
     justify-content: center;
+    align-items: center;
+    height: 60px;
+    color: #fff;
 }
 h1 {
     font-size: 200%;
@@ -66,16 +71,90 @@ main{
 .main-row p{
     margin: 20px 0 20px 20px;
     padding: 0 20px 0 0;
-    border:1px solid #000;
     width:100%;
     line-height: 2em;
 }
 .main-row div{
-    width:100%;
-    margin: 20px 0 20px 20px;
+   
+    margin: 0 0 0 10px;
     padding: 0 20px 20px 0;
-    border:1px solid #000;
+   
 }
+#work-content{
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+    
+}
+#resume-content{
+    display:flex;
+    flex-direction: column;
+}
+
+#contact-content{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right:500px;
+}
+
+#smaller-tiles{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 0 0 5px;
+    margin:0;
+}
+
+#smaller-tiles figcaption{
+    background-color: var(--caption-background);
+    color: #fff;
+    font: smaller bold;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.wc-tile:hover, .wc-main:hover{
+    box-shadow: 10px 10px 5px var(--main-hover);
+}
+.wc-tile{
+    display:block;
+    margin: 10px 8px 10px 8px;
+    width: 452px;
+    border:1px solid #000;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+}
+.wc-tile img{
+    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.wc-main{
+    width: 932px;
+    margin:10px;
+    border:1px solid #000;
+    border-radius: 20px;
+}
+.wc-main figcaption{
+    background-color: var(--caption-background);
+    color: #fff;
+    font: smaller bold;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.wc-main img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
     header, .main-row {
@@ -91,6 +170,16 @@ main{
     .main-row p{
         margin: 0 0 0 0;
         padding: 10px 20px 10px 20px;
+    }
+    .wc-main{
+        width: 454px;
+        margin:10px;
+        border:1px solid #000;
+        border-radius: 20px;
+    }
+    .wc-main img{
+        width: 452px;
+        height: 200px;
     }
    
   }
