@@ -1,3 +1,5 @@
+
+/* global values to use in styling */
 :root {
     --main-border:#6C91BF;
     --secondary-border: #5FB0B7;
@@ -5,7 +7,7 @@
     --caption-background: #7E2E84;
   }
 
-
+/* element selectors styling*/
 body {
     display: flex;
     flex-direction: column;
@@ -54,6 +56,7 @@ main{
     flex: 1 0 0;
 }
 
+/* class selectors styling*/
 .main-row{
     display: flex;
     flex-direction: row;
@@ -75,45 +78,10 @@ main{
     line-height: 2em;
 }
 .main-row div{
-   
+    width:100%;
     margin: 0 0 0 10px;
     padding: 0 20px 20px 0;
    
-}
-#work-content{
-    display:flex;
-    flex-direction: column;
-    margin-top: 10px;
-    
-}
-#resume-content{
-    display:flex;
-    flex-direction: column;
-}
-
-#contact-content{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-right:500px;
-}
-
-#smaller-tiles{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 0 0 5px;
-    margin:0;
-}
-
-#smaller-tiles figcaption{
-    background-color: var(--caption-background);
-    color: #fff;
-    font: smaller bold;
-    text-align: center;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
 }
 
 .wc-tile:hover, .wc-main:hover{
@@ -129,7 +97,6 @@ main{
     border-radius: 20px;
 }
 .wc-tile img{
-    
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -154,8 +121,80 @@ main{
 }
 
 
+/* id selectors styling*/
+
+#work-content{
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+    
+}
+
+#about-me-content img{
+    float:left;
+    width: 450px;
+    height: 300px;
+    margin: 20px 18px 18px 10px;
+}
+#resume-content{
+    display:flex;
+    flex-direction: column;
+}
+
+#contact-content{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right:200px;
+}
+
+#contact-content a{
+    color: var(--main-border);
+    font-size: 18px;
+    text-decoration: none;
+    padding-right:20px;
+}
+#contact-content a:hover{
+    text-decoration: underline;
+
+}
+#smaller-tiles{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 0 0 5px;
+    margin:0;
+}
+
+#smaller-tiles figcaption{
+    background-color: var(--caption-background);
+    color: #fff;
+    font: smaller bold;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#about-me-content img{
+    
+    border-radius: 20px;
+    
+}
+#about-me-content figcaption{
+    margin: 0;
+    padding: 0;
+    background-color: var(--caption-background);
+    color: #fff;
+    font: smaller bold;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 
 
+
+/* phone screen styling changes */
 @media screen and (max-width: 768px) {
     header, .main-row {
       flex-direction: column;

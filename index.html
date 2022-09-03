@@ -1,3 +1,9 @@
+<!--
+
+M2 Challenge using semantic html where appropriate and html styling structures where needed. 
+
+-->
+
 <html>
     <head>
         <meta charset="UTF-8" />
@@ -7,6 +13,7 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
+        <!--Header with main title and nav-->
         <header class="header">
             <h1>Hey... It's James!</h1>
             <nav>
@@ -18,59 +25,68 @@
                 </ul>
             </nav>
         </header>
+        <!--Main content body with all of the major sections-->
         <main class="main">
+            <!--About Me Section-->
             <section class="main-row" id="about-me">
                 <h3 id="about-me">About Me</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit eget gravida cum sociis natoque penatibus. Vel risus commodo viverra maecenas accumsan lacus. Adipiscing vitae proin sagittis nisl rhoncus. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Lorem dolor sed viverra ipsum nunc aliquet. Egestas congue quisque egestas diam in arcu cursus. In est ante in nibh. Pretium viverra suspendisse potenti nullam ac tortor vitae purus. Enim facilisis gravida neque convallis a. Lacinia quis vel eros donec ac odio tempor. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Felis donec et odio pellentesque. Arcu bibendum at varius vel pharetra vel turpis nunc eget. Diam quam nulla porttitor massa. Sodales ut eu sem integer vitae justo eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Euismod elementum nisi quis eleifend quam adipiscing vitae. Lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique.
-                </p>
+                <div id="about-me-content">
+                    <img src="https://www.fillmurray.com/450/300" alt="My picture, but really Bill Murray"/>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque elit eget gravida cum sociis natoque penatibus. Vel risus commodo viverra maecenas accumsan lacus. Adipiscing vitae proin sagittis nisl rhoncus. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Lorem dolor sed viverra ipsum nunc aliquet. Egestas congue quisque egestas diam in arcu cursus. In est ante in nibh. Pretium viverra suspendisse potenti nullam ac tortor vitae purus. Enim facilisis gravida neque convallis a. Lacinia quis vel eros donec ac odio tempor. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Felis donec et odio pellentesque. Arcu bibendum at varius vel pharetra vel turpis nunc eget. Diam quam nulla porttitor massa. Sodales ut eu sem integer vitae justo eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Euismod elementum nisi quis eleifend quam adipiscing vitae. Lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique.
+                    </p>
+                </div>
             </section>
+            <!--My Work Section-->
             <section  class="main-row" id="my-work">
                 <h3 id="work">My Work</h3>
                 <div id="work-content">
-                    <a class="wc-main">
+                    <a href="https://github.com" target="_blank" class="wc-main" >
                         <figure>
-                            <img src="https://www.fillmurray.com/930/500"/>
+                            <img src="https://www.fillmurray.com/930/500" alt="My first project to display"/>
                             <figcaption>Project 1</figcaption>
                         </figure>
                     </a>
                     <div id="smaller-tiles">
-                        <a href="" class="wc-tile">
+                        <a href="https://github.com" target="_blank" class="wc-tile">
                             <figure>
-                                <img src="https://www.fillmurray.com/450/200"/>
+                                <img src="https://www.fillmurray.com/450/200" alt="My 2nd project to display"/>
                                 <figcaption>Project 2</figcaption>
                             </figure>
                         </a>
-                        <a href="" class="wc-tile">
+                        <a href="https://github.com" target="_blank" class="wc-tile">
                             <figure>
-                                <img src="https://www.fillmurray.com/450/200"/>
+                                <img src="https://www.fillmurray.com/450/200" alt="My 3rd project to display" />
                                 <figcaption>Project 3</figcaption>
                             </figure>
                         </a>
-                        <a class="wc-tile">
+                        <a href="https://github.com" target="_blank" class="wc-tile">
                             <figure>
-                                <img src="https://www.fillmurray.com/450/200"/>
+                                <img src="https://www.fillmurray.com/450/200" alt="My 4th project to display"/>
                                 <figcaption>Project 4</figcaption>
                             </figure>
                         </a>
-                        <a class="wc-tile">
+                        <a href="https://github.com" target="_blank" class="wc-tile">
                             <figure>
-                                <img src="https://www.fillmurray.com/450/200"/>
+                                <img src="https://www.fillmurray.com/450/200" alt="My 5th project to display"/>
                                 <figcaption>Project 5</figcaption>
                             </figure>
                         </a>
                     </div>
                 </div>
             </section>
+            <!--Contact Me Section-->
             <section  class="main-row" id="contact-me">
                 <h3 id="contact">Contact Me</h3>
                     <p id="contact-content">
                         <a href="mailto:dummyemail@email.com" target="_blank">NotMyEmail@email.com</a>
-                        <a href="tel:5555555555">555-555-5555</a>
-                        <a href="https://github.com/conradjohnson">Github</a>
-                        <a href="https://twitter.com/DalaiLama">Twitter</a>
+                        <a href="tel:5555555555" target="_blank">555-555-5555</a>
+                        <a href="https://github.com/conradjohnson" target="_blank">Github</a>
+                        <a href="https://twitter.com/DalaiLama" target="_blank">Twitter</a>
                     </p>
                 
             </section>
+            <!--Resume Section-->
             <section  class="main-row" id="resume">
                 <h3>Resume</h3>
                 <p id="resume-content">
@@ -78,6 +94,7 @@
                 </p>
             </section>
         </main>
+        <!--Footer Content-->
         <footer class="footer">
                 Thanks for stopping by!
         </footer>
